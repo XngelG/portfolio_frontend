@@ -1,7 +1,7 @@
 .Main{
-  background-color: #2C3540;
+  background-color: #1B262C;
   height: 100vh;
-  color: #E5E5E5;
+  color: #BBE1FA;
   overflow: scroll;
   display: flex;
   justify-content: center;
@@ -13,6 +13,25 @@
   padding-top: 5%;
 }
 
+.Form2{
+  padding-top: 2pt;
+}
+
+.buttonTrends{
+  width: 20%;
+  height: 24px;
+  font-size:large;
+  font-weight: bold;
+  background-color: #0F4C75;
+  color:#BBE1FA;
+
+  border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
 .keywordText{
   width: 100%;
   text-align: center;
@@ -20,14 +39,27 @@
 .keywordBox{
   width: 100%;
   height: 36px;
+  text-indent: 2%;
+
+  border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 .keywordSubmit{
   width: 100%;
   height: 36px;
   font-size:large;
   font-weight: bold;
-  background-color: #408080;
-  color:#E5E5E5;
+  background-color: #0F4C75;
+  color:#BBE1FA;
+
+  border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .loadingBar{
@@ -46,7 +78,12 @@
 .wordcloudGrid{
   display: flex;
   margin-top: 2%;
-  background-color: #E5E5E5;
+  background-color: #0F4C75;
+  border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .leftGrid{
@@ -58,7 +95,7 @@
 .reportText{
   width: 100%;
   text-align: center;
-  color: #18222B;
+  color: #BBE1FA;
   font-size:30px;
   font-weight: bold;
   padding-left: 2%;
@@ -91,7 +128,7 @@
 .wordcloudText{
   margin-top: 2%;
   text-align: center;
-  color: #18222B;
+  color: #BBE1FA;
 }
 
 @media (max-width: 1024px) {

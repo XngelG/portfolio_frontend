@@ -8,7 +8,7 @@ import {Doughnut} from 'react-chartjs-2';
 import 'chart.js/auto';
 import { Resizable } from "re-resizable";
 
-export default function Home() {
+export default function Home({trendData,trendError}) {
   const [isCompleted,setIsCompleted,] = useState(false)
   const [isLoading,setIsLoading,] = useState(false)
   const [keywordSearch,setKeyword] = useState("")
@@ -27,12 +27,11 @@ export default function Home() {
 
   const getSentiment = async event => {
     event.preventDefault()
-    setKeyword(event.target.name.value)
     const options ={
       method: "POST",
       body: JSON.stringify(
         {
-          keyword: event.target.name.value,
+          keyword: keywordSearch,
           email: "",
           positive: 0,
           negative: 0,
@@ -49,7 +48,6 @@ export default function Home() {
     const res = await fetch('http://localhost:8000/api/sentiment/',options)
     const result = await res.json()
     setData(result)
-    console.log('result',result)
     setIsLoading(false)
     setIsCompleted(true)
     return result;
@@ -70,14 +68,14 @@ export default function Home() {
         backgroundColor: [
           '#26C261',
           '#C7332C',
-          '#1B8BD1'
+          '#F7D71E'
         ],
         hoverBackgroundColor: [
           '#12592D',
           '#591714',
-          '#0E476B'
+          '#EBCB1D'
         ]
-      }]
+      }],
     };
 
   }
@@ -90,9 +88,18 @@ export default function Home() {
             <div className={styles.Form}>
               <form onSubmit={getSentiment}>
               <h1 className={styles.keywordText}>Analyze sentiment of any topic!</h1>
-              <input id="name" name="name" type="text" autoComplete="name" required className={styles.keywordBox}/>
+              <input id="name" name="name" type="text" autoComplete="on" required className={styles.keywordBox} onChange={(e)=>{setKeyword(e.target.value);}} placeholder={keywordSearch}/>
               <button type="submit" className={styles.keywordSubmit}>Search</button>
               </form> 
+            </div>
+            <div className={styles.Form2}>
+              <form onSubmit={getSentiment}>
+                <button type="submit" value={trendData.trend_1} onClick={(e)=>{setKeyword(e.target.value);}} className={styles.buttonTrends}>{trendData.trend_1}</button>
+                <button type="submit" value={trendData.trend_2} onClick={(e)=>{setKeyword(e.target.value);}} className={styles.buttonTrends}>{trendData.trend_2}</button>
+                <button type="submit" value={trendData.trend_3} onClick={(e)=>{setKeyword(e.target.value);}} className={styles.buttonTrends}>{trendData.trend_3}</button>
+                <button type="submit" value={trendData.trend_4} onClick={(e)=>{setKeyword(e.target.value);}} className={styles.buttonTrends}>{trendData.trend_4}</button>
+                <button type="submit" value={trendData.trend_5} onClick={(e)=>{setKeyword(e.target.value);}} className={styles.buttonTrends}>{trendData.trend_5}</button>
+              </form>
             </div>
             {isLoading?
               <div>
@@ -119,7 +126,7 @@ export default function Home() {
                   <div className={styles.wordcloudBox}>
                     <div className={styles.wordCloud}>
                       <Resizable>
-                        <ReactWordcloud options={{rotations: 2,rotationAngles: [-90, 0],fontSizes: [15,60],colors:["#1F994E","#12592D","#2BD96E","#2EE674","#26C261"],}} 
+                        <ReactWordcloud options={{rotations: 2,rotationAngles: [-90, 0],fontSizes: [15,60],colors:["#507A11","#C3FB6E","#A4FA22","#5F7A36","#82C71C"],}} 
                         words={data.wordcloud_pos} 
                         />
                       </Resizable>
@@ -129,7 +136,7 @@ export default function Home() {
                   <div className={styles.wordcloudBox}>
                     <div className={styles.wordCloud}>
                       <Resizable>
-                        <ReactWordcloud options={{rotations: 2,rotationAngles: [-90, 0],fontSizes: [15,60],colors:["#992822","#591714","#D93830","#E63B32","#C7332C"],}}
+                        <ReactWordcloud options={{rotations: 2,rotationAngles: [-90, 0],fontSizes: [15,60],colors:["#933027","#AE3F32","#BF4D41","#D36156","#E87567"],}}
                         words={data.wordcloud_neg}
                         />
                       </Resizable>
@@ -151,3 +158,35 @@ export default function Home() {
   
 }
 
+
+export async function getStaticProps(){
+  let trendData = []
+  let trendError = null;
+  try {
+    const options ={
+      method: "POST",
+      body: JSON.stringify(
+        {
+          "trend_1": "",
+          "trend_2": "",
+          "trend_3": "",
+          "trend_4": "",
+          "trend_5": ""
+        }),
+      headers:{
+          'Content-Type': 'application/json'
+      }
+    }
+    const response = await fetch('http://localhost:8000/api/trends/',options)
+    trendData = await response.json()
+  } catch (err) {
+    trendError = err.message?err.message:"Something went wrong"
+  }
+
+  return{
+    props:{
+      trendData,
+      trendError,
+    }
+  }
+}
