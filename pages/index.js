@@ -159,7 +159,7 @@ export default function Home({trendData,trendError}) {
 }
 
 
-export async function getStaticProps(){
+export async function getServerSideProps(){
   let trendData = []
   let trendError = null;
   try {
