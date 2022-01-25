@@ -66,24 +66,25 @@ export default function Home({trendData,trendError}) {
       datasets: [{
         data: [data.positive, data.negative, data.neutral],
         backgroundColor: [
-          '#26C261',
-          '#C7332C',
-          '#F7D71E'
+          '#43A047',
+          '#E53935',
+          '#00ACC1'
         ],
         hoverBackgroundColor: [
-          '#12592D',
-          '#591714',
-          '#EBCB1D'
+          '#1B5E20',
+          '#B71C1C',
+          '#006064'
         ]
       }],
+      
     };
 
   }
 
   if(process.browser){
     return(
-      <div>
-        <main className={styles.Main}>
+      <main>
+        <div className={styles.Main}>
           <div className={styles.InnerContent}>
             <div className={styles.Form}>
               <form onSubmit={getSentiment}>
@@ -104,7 +105,7 @@ export default function Home({trendData,trendError}) {
             {isLoading?
               <div>
                 <div className={styles.loadingBar} >
-                  <Bars color="#408080" height={80} width={120} />
+                  <Bars color="#212121" height={80} width={120} />
                 </div>
                 <p className={styles.loadingText}>PROCESSING INFO</p>
               </div>:<div></div>
@@ -126,7 +127,7 @@ export default function Home({trendData,trendError}) {
                   <div className={styles.wordcloudBox}>
                     <div className={styles.wordCloud}>
                       <Resizable>
-                        <ReactWordcloud options={{rotations: 2,rotationAngles: [-90, 0],fontSizes: [15,60],colors:["#507A11","#C3FB6E","#A4FA22","#5F7A36","#82C71C"],}} 
+                        <ReactWordcloud options={{rotations: 2,rotationAngles: [-90, 0],fontSizes: [15,60],colors:["#1B5E20","#2E7D32","#388E3C","#43A047"],}} 
                         words={data.wordcloud_pos} 
                         />
                       </Resizable>
@@ -136,7 +137,7 @@ export default function Home({trendData,trendError}) {
                   <div className={styles.wordcloudBox}>
                     <div className={styles.wordCloud}>
                       <Resizable>
-                        <ReactWordcloud options={{rotations: 2,rotationAngles: [-90, 0],fontSizes: [15,60],colors:["#933027","#AE3F32","#BF4D41","#D36156","#E87567"],}}
+                        <ReactWordcloud options={{rotations: 2,rotationAngles: [-90, 0],fontSizes: [15,60],colors:["#B71C1C","#C62828","#D32F2F","#E53935"],}}
                         words={data.wordcloud_neg}
                         />
                       </Resizable>
@@ -147,8 +148,8 @@ export default function Home({trendData,trendError}) {
               </div>:<div></div>
             }
           </div>
-        </main>
-      </div>
+        </div>
+      </main>
       //
       )
   }
