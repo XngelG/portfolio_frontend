@@ -114,7 +114,7 @@ export default function Home({trendData,trendError}) {
               <div className={styles.wordcloudGrid}>
                 <div className={styles.leftGrid}>
                   <div className={styles.reportText}> 
-                    <p>"{keywordSearch}" returns a {pos_parse}% of positive opinions and {neg_parse}% of negative opinions </p>
+                    <p>{keywordSearch} returns a {pos_parse}% of positive opinions and {neg_parse}% of negative opinions </p>
                   </div>
                   <div className={styles.dataChart}>
                     <Doughnut data={dataChart} />
