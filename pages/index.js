@@ -45,7 +45,7 @@ export default function Home({trendData,trendError}) {
     }
     setIsCompleted(false)
     setIsLoading(true)
-    const res = await fetch('http://localhost:8000/api/sentiment/',options)
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/sentiment/`,options)
     const result = await res.json()
     setData(result)
     setIsLoading(false)
@@ -177,7 +177,7 @@ export async function getStaticProps(){
           'Content-Type': 'application/json'
       }
     }
-    const response = await fetch('http://localhost:8000/api/trends/',options)
+    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/trends/`,options)
     trendData = await response.json()
   } catch (err) {
     trendError = err.message?err.message:"Something went wrong"

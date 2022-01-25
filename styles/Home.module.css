@@ -135,6 +135,9 @@
   .InnerContent{
     width: 95%;
   }
+  .buttonTrends{
+    width: 100%;
+  }
   .wordcloudGrid{
     display:block;
   }
