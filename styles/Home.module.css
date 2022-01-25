@@ -24,6 +24,7 @@
   font-size:large;
   font-weight: bold;
   background-color: #EEEEEE;
+  color: inherit;
   /* color:#BBE1FA; */
 
   border-radius: 8px;
@@ -56,6 +57,7 @@
   font-size:large;
   font-weight: bold;
   background-color: #EEEEEE;
+  color: inherit;
   /*color:#BBE1FA;*/
 
   border-radius: 8px;
