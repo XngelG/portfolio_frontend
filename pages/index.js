@@ -180,6 +180,7 @@ export async function getStaticProps(){
     const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/trends/`,options)
     trendData = await response.json()
   } catch (err) {
+    console.log('err', err);
     trendError = err.message?err.message:"Something went wrong"
   }
 
