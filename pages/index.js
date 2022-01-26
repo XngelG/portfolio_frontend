@@ -4,7 +4,14 @@ import Head from 'next/head'
 import {SiNextdotjs} from 'react-icons/si'
 import {SiReact} from 'react-icons/si'
 import {SiDjango} from 'react-icons/si'
-
+import {SiGit} from 'react-icons/si'
+import {SiPython} from 'react-icons/si'
+import {SiPandas} from 'react-icons/si'
+import {SiScipy} from 'react-icons/si'
+import {SiNumpy} from 'react-icons/si'
+// import {SiPython} from 'react-icons/si'
+// import {SiPython} from 'react-icons/si'
+// import {SiPython} from 'react-icons/si'
 
 export default function Home() {
   return(
@@ -58,19 +65,78 @@ export default function Home() {
                 </p>
               </div>
             </body>
-            <div className={styles.SkillsIcons}>
-              <div className={styles.Icon}>
-                <div className={styles.IconSeparation}>
-                  <SiNextdotjs size={70} color="gold" />
-                </div>
-                <div className={styles.IconSeparation}>
-                  <SiReact size={70} color="gold" />
-                </div>
-              </div>
-              <div className={styles.Icon}>
-                <SiDjango size={70} color="gold" />
-              </div>
+
+            <div className={styles.Table}>
+              <table className={styles.SkillsIcons}>
+                <tr>
+                  <th>
+                    <div className={styles.IconSeparation}>
+                      <SiNextdotjs className={styles.IconSize}/>
+                      <p className={styles.IconSeparationText}>Next JS</p>
+                    </div>
+                  </th>
+                  <th>
+                    <div className={styles.IconSeparation}>
+                      <SiReact className={styles.IconSize}/>
+                      <p className={styles.IconSeparationText}>React JS</p>
+                    </div>
+                  </th>
+                </tr>
+              </table>
+
+              <table className={styles.SkillsIcons}>
+                <tr>
+                  <th>
+                    <div className={styles.IconSeparation}>
+                      <SiPython className={styles.IconSize}/>
+                      <p className={styles.IconSeparationText}>Python</p>
+                    </div>
+                  </th>
+                  <th>
+                    <div className={styles.IconSeparation}>
+                      <SiDjango className={styles.IconSize}/>
+                      <p className={styles.IconSeparationText}>Django</p>
+                    </div>
+                  </th>
+                </tr>
+              </table>
+
+              <table className={styles.SkillsIcons}>
+                <tr>
+                  <th>
+                    <div className={styles.IconSeparation}>
+                      <SiGit className={styles.IconSize}/>
+                      <p className={styles.IconSeparationText}>Git</p>
+                    </div>
+                  </th>
+                  <th>
+                    <div className={styles.IconSeparation}>
+                      <SiPandas className={styles.IconSize}/>
+                      <p className={styles.IconSeparationText}>Pandas</p>
+                    </div>
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <div className={styles.IconSeparation}>
+                      <SiScipy className={styles.IconSize}/>
+                      <p className={styles.IconSeparationText}>SciPy</p>
+                    </div>
+                  </th>
+                  <th>
+                    <div className={styles.IconSeparation}>
+                      <SiNumpy className={styles.IconSize}/>
+                      <p className={styles.IconSeparationText}>NumPy</p>
+                    </div>
+                  </th>
+                </tr>
+              </table>
+
+
             </div>
+
+            
+
           </div>
         </div>
       </main>      
