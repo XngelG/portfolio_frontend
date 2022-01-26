@@ -155,6 +155,7 @@
   }
   .buttonTrends{
     width: 100%;
+    margin: 0%;
   }
   .wordcloudGrid{
     display:block;
