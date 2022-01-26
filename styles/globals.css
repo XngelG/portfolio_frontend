@@ -6,6 +6,18 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+Link{
+  font-family: 'Bebas Neue', cursive;
+}
+
+h{
+  font-family: 'Bebas Neue', cursive;
+}
+
+p{
+  font-family: 'Bebas Neue', cursive;
+}
+
 a {
   color: inherit;
   text-decoration: none;
