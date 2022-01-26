@@ -38,10 +38,10 @@ export default function Home() {
             </div>
             <body className={styles.Body}>
               <h1 className={styles.Intro}>
-                HEY, I'M ÁNGEL GALLARDO
+                HEY, I&apos;M ÁNGEL GALLARDO
               </h1>
               <p className={styles.Headline}>
-                I'M A POST-GRADUATE PROFESSIONAL WITH A PASSION FOR PROGRAMMING, MACHINE LEARNING, AND MECHATRONICS. I CURRENTLY WORK AT KEYENCE AS A TECH SUPPORT ENGINEER. I'M ALSO AN ASPIRING PHOTOGRAPHER.
+                I&apos;M A POST-GRADUATE PROFESSIONAL WITH A PASSION FOR PROGRAMMING, MACHINE LEARNING, AND MECHATRONICS. I CURRENTLY WORK AT KEYENCE AS A TECH SUPPORT ENGINEER. I&apos;M ALSO AN ASPIRING PHOTOGRAPHER.
               </p>
               <h2 className={styles.MySkills}>
                 MY SKILLS
