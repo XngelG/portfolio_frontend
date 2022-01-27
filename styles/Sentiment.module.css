@@ -4,6 +4,7 @@
   color: #212121;
   display: flex;
   justify-content: center;
+  overflow: scroll;
   
 }
 .InnerContent{

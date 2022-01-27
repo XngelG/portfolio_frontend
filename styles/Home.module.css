@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   z-index: 2;
+  overflow: scroll;
 }
 
 .Main{
@@ -39,19 +40,27 @@
 }
 
 .Body{
+}
 
+.IntroImage{
+  display: flex;
 }
 
 .Intro{
   color: white;
   font-size: 300%;
   font-weight: bolder;
-  width: 80%;
+  width: 60%;
+}
+
+.Memoji{
+  width: 40%;
+  display: block
 }
 
 .Headline{
   display: flex;
-  width: 80%;
+  width: 100%;
   color: gold;
   font-size: 135%;
   font-weight: bold;
@@ -66,12 +75,8 @@
   font-weight: bold;
 }
 
-.SkillsColumn{
-  display: flex;
-}
-
 .Skillset{
-  width: 33%;
+  width: 100%;
   color: gold;
   font-size: 180%;
   font-weight: bold;
@@ -83,16 +88,16 @@
 }
 
 .SkillsIcons{
-  width: 33%;
+  width: 100%;
 }
 
 .IconSeparation{
   text-align: center;
-  vertical-align: middle;  
+  vertical-align: middle;
 }
 
 .IconSize{
-  font-size: 70px;
+  font-size: 50px;
   color: white;
 }
 
@@ -112,4 +117,14 @@
   .IconSize{
     font-size: 35px;
   }
+
+  .Table{
+    display: inline;
+  }
+  .SkillsIcons{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
