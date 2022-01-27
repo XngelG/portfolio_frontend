@@ -46,9 +46,12 @@ export default function Home() {
             </div>
 
             <div className={styles.IntroImage}>
-              <h1 className={styles.Intro}>
-                HEY, I&apos;M ÁNGEL GALLARDO
-              </h1>
+              <div className={styles.Intro}>
+                <h1 className={styles.IntroText}>
+                  HEY, I&apos;M ÁNGEL GALLARDO
+                </h1>
+              </div>
+              
               <div className={styles.Memoji}>
                 <Image src="https://i.imgur.com/zx0ytkW.png" alt="Campaign Banner" layout='responsive' width={400} height={400}/>
               </div>
