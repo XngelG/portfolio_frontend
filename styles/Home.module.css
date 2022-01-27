@@ -11,7 +11,7 @@
 
 .Main{
   background-image: url("https://cdn.shopify.com/s/files/1/0104/1599/6990/t/4/assets/password-page-background.jpg?v=16656598382656611395");
-  position: absolute;
+  position: fixed;
   top: 0;
   height: 100%;
   width: 100%;
@@ -39,18 +39,17 @@
   font-weight: bold;
 }
 
-.Body{
-}
-
 .IntroImage{
   display: flex;
 }
 
 .Intro{
+  line-height: normal;
   color: white;
   font-size: 300%;
   font-weight: bolder;
   width: 60%;
+  text-align: center;
 }
 
 .Memoji{
@@ -65,6 +64,7 @@
   font-size: 135%;
   font-weight: bold;
   font-style: italic;
+  letter-spacing: 0.1em;
   text-justify:distribute;
 }
 
@@ -75,38 +75,52 @@
   font-weight: bold;
 }
 
-.Skillset{
-  width: 100%;
-  color: gold;
-  font-size: 180%;
-  font-weight: bold;
-  text-align: center;
-}
-
-.Table{
+.Skills{
+  margin-top: -5%;
   display: flex;
-}
-
-.SkillsIcons{
   width: 100%;
 }
 
-.IconSeparation{
+.SkillsSet{
+  width: 33.3%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.SkillsTitle{
+  color: gold;
+  font-size: 200%;
+  font-weight: bold;
+  width: 100%%;
   text-align: center;
-  vertical-align: middle;
+}
+
+.SkillsIcon{
+  display: flex;
+  margin-top: -10%;
+}
+
+.IconCombo{
+  width: 50%;
+}
+
+.IconPosition{
+  text-align: center;
 }
 
 .IconSize{
-  font-size: 50px;
+  font-size: 70px;
   color: white;
 }
 
-.IconSeparationText{
-  text-align: center;
+.IconText{
   color: white;
-  font-size: 100%;
-  font-weight: bold;
+  font-size: 120%;
   text-align: center;
+}
+
+.Footer{
+  height: 5%;
 }
 
 @media (max-width: 1024px) {
@@ -114,17 +128,38 @@
     width: 95%;
   }
 
+  .Intro{
+    font-size: 200%;
+  }
+  
+  .Headline{
+    font-size: 100%;
+  }
+  
+  .MySkills{
+    font-size: 166%;
+  }
+
+  .Skills{
+    display: inline;
+  }
+
+  .SkillsSet{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .SkillTitle{
+    font-size: 166%;
+  }
+
   .IconSize{
     font-size: 35px;
   }
 
-  .Table{
-    display: inline;
-  }
-  .SkillsIcons{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+  .IconText{
+    font-size: 90%;
   }
 
 }

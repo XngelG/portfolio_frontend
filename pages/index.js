@@ -44,114 +44,93 @@ export default function Home() {
                 <Link href={"/"}>PORTFOLIO</Link>
                 </div>            
             </div>
-            <body className={styles.Body}>
-              <div className={styles.IntroImage}>
-                <h1 className={styles.Intro}>
-                  HEY, I&apos;M ÁNGEL GALLARDO
-                </h1>
-                <div className={styles.Memoji}>
-                  <Image src="https://i.imgur.com/zx0ytkW.png" alt="Campaign Banner" layout='responsive' width={400} height={400}/>
-                </div>
+
+            <div className={styles.IntroImage}>
+              <h1 className={styles.Intro}>
+                HEY, I&apos;M ÁNGEL GALLARDO
+              </h1>
+              <div className={styles.Memoji}>
+                <Image src="https://i.imgur.com/zx0ytkW.png" alt="Campaign Banner" layout='responsive' width={400} height={400}/>
               </div>
-              <p className={styles.Headline}>
-                I&apos;M A POST-GRADUATE PROFESSIONAL WITH A PASSION FOR PROGRAMMING, MACHINE LEARNING, AND MECHATRONICS. I CURRENTLY WORK AT KEYENCE AS A TECH SUPPORT ENGINEER. I&apos;M ALSO AN ASPIRING PHOTOGRAPHER.
-              </p>
-              <h2 className={styles.MySkills}>
-                MY SKILLS
-              </h2>
-            </body>
-
-            <div className={styles.Table}>
-
-              <table className={styles.SkillsIcons}>
-                <tr height="33%">
-                  <th colSpan="100%">
-                    <p className={styles.Skillset}>
-                      Front End
-                    </p>
-                  </th>
-                </tr>
-                <tr height="66%">
-                  <th>
-                    <div className={styles.IconSeparation}>
-                      <SiNextdotjs className={styles.IconSize}/>
-                      <p className={styles.IconSeparationText}>Next JS</p>
-                    </div>
-                  </th>
-                  <th>
-                    <div className={styles.IconSeparation}>
-                      <SiReact className={styles.IconSize}/>
-                      <p className={styles.IconSeparationText}>React JS</p>
-                    </div>
-                  </th>
-                </tr>
-              </table>
-
-              <table className={styles.SkillsIcons}>
-                <tr height="33%">
-                  <th colSpan="100%">
-                    <p className={styles.Skillset}>
-                      Back End
-                    </p>
-                  </th>
-                </tr>
-                <tr height="66%">
-                  <th>
-                    <div className={styles.IconSeparation}>
-                      <SiPython className={styles.IconSize}/>
-                      <p className={styles.IconSeparationText}>Python</p>
-                    </div>
-                  </th>
-                  <th>
-                    <div className={styles.IconSeparation}>
-                      <SiDjango className={styles.IconSize}/>
-                      <p className={styles.IconSeparationText}>Django</p>
-                    </div>
-                  </th>
-                </tr>
-              </table>
-
-              <table className={styles.SkillsIcons}>
-                <tr>
-                  <th colSpan="100%">
-                    <p className={styles.Skillset}>
-                      Tools
-                    </p>
-                  </th>
-                </tr>
-                <tr>
-                  <th>
-                    <div className={styles.IconSeparation}>
-                      <SiGit className={styles.IconSize}/>
-                      <p className={styles.IconSeparationText}>Git</p>
-                    </div>
-                  </th>
-                  <th>
-                    <div className={styles.IconSeparation}>
-                      <SiPandas className={styles.IconSize}/>
-                      <p className={styles.IconSeparationText}>Pandas</p>
-                    </div>
-                  </th>
-                </tr>
-                <tr>
-                  <th>
-                    <div className={styles.IconSeparation}>
-                      <SiScipy className={styles.IconSize}/>
-                      <p className={styles.IconSeparationText}>SciPy</p>
-                    </div>
-                  </th>
-                  <th>
-                    <div className={styles.IconSeparation}>
-                      <SiNumpy className={styles.IconSize}/>
-                      <p className={styles.IconSeparationText}>NumPy</p>
-                    </div>
-                  </th>
-                </tr>
-              </table>
-
             </div>
 
+            <p className={styles.Headline}>
+              I&apos;M A POST-GRADUATE PROFESSIONAL WITH A PASSION FOR PROGRAMMING, MACHINE LEARNING, AND MECHATRONICS. I CURRENTLY WORK AT KEYENCE AS A TECH SUPPORT ENGINEER. I&apos;M ALSO AN ASPIRING PHOTOGRAPHER.
+            </p>
+
+            <h2 className={styles.MySkills}>
+              MY SKILLS
+            </h2>
+
+            <div className={styles.Skills}>
+
+              <div className={styles.SkillsSet}>
+
+                <p className={styles.SkillsTitle}>Front End</p>
+
+                <div className={styles.SkillsIcon}>
+                  <div className={styles.IconCombo}>
+                    <div className={styles.IconPosition}>
+                      <SiNextdotjs className={styles.IconSize}/>
+                    </div>
+                    <p className={styles.IconText}>Next JS</p>
+                  </div>
+                  <div className={styles.IconCombo}>
+                    <div className={styles.IconPosition}>
+                      <SiReact className={styles.IconSize}/>
+                    </div>
+                    <p className={styles.IconText}>React JS</p>
+                  </div>
+                </div>
+                  
+
+              </div>
+
+              <div className={styles.SkillsSet}>
+
+                <p className={styles.SkillsTitle}>Back End</p>
+
+                <div className={styles.SkillsIcon}>
+                  <div className={styles.IconCombo}>
+                    <div className={styles.IconPosition}>
+                      <SiPython className={styles.IconSize}/>
+                    </div>
+                    <p className={styles.IconText}>Python</p>
+                  </div>
+                  <div className={styles.IconCombo}>
+                    <div className={styles.IconPosition}>
+                      <SiDjango className={styles.IconSize}/>
+                    </div>
+                    <p className={styles.IconText}>Django</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div className={styles.SkillsSet}>
+
+                <p className={styles.SkillsTitle}>Tools</p>
+
+                <div className={styles.SkillsIcon}>
+                  <div className={styles.IconCombo}>
+                    <div className={styles.IconPosition}>
+                      <SiGit className={styles.IconSize}/>
+                    </div>
+                    <p className={styles.IconText}>Git</p>
+                  </div>
+                  <div className={styles.IconCombo}>
+                    <div className={styles.IconPosition}>
+                      <SiScipy className={styles.IconSize}/>
+                    </div>
+                    <p className={styles.IconText}>SciKit Learn</p>
+                  </div>
+                </div>
+
+              </div>
+              
+            </div>
             
+            <div className={styles.Footer}/>            
 
           </div>
         </div>
