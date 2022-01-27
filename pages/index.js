@@ -65,7 +65,7 @@ export default function Home() {
 
               <table className={styles.SkillsIcons}>
                 <tr height="33%">
-                  <th colspan="100%">
+                  <th colSpan="100%">
                     <p className={styles.Skillset}>
                       Front End
                     </p>
