@@ -45,6 +45,8 @@ export default function Home() {
                 </div>            
             </div>
 
+            <div className={styles.Line}/>
+
             <div className={styles.IntroImage}>
               <div className={styles.Intro}>
                 <h1 className={styles.IntroText}>
@@ -61,7 +63,7 @@ export default function Home() {
               I&apos;M A POST-GRADUATE PROFESSIONAL WITH A PASSION FOR PROGRAMMING, MACHINE LEARNING, AND MECHATRONICS. I CURRENTLY WORK AT KEYENCE AS A TECH SUPPORT ENGINEER. I&apos;M ALSO AN ASPIRING PHOTOGRAPHER.
             </p>
 
-            <h2 className={styles.MySkills}>
+            <h2 className={styles.PortfolioTitle}>
               MY SKILLS
             </h2>
 
@@ -132,6 +134,21 @@ export default function Home() {
               </div>
               
             </div>
+
+            <h2 className={styles.PortfolioTitle}>
+              MY PROJECTS
+            </h2>
+
+            <div className={styles.ProjectBorder}>
+              <Link href={"/sentiment/"}>
+                <h3 className={styles.ProjectLinkTitle}>Sentiment analysis</h3>
+              </Link>
+              <Link href={"/sentiment/"} className={styles.ProjectLinks}>
+                <p className={styles.ProjectLinkParagraph}>Created a REST API that has two main functions, fetch top 5 trends in Twitter and using NLP libraries return the sentiment (positive, negative, neutral) that Twitter has related to the searched topic</p>
+              </Link>
+            </div>
+
+
             
             <div className={styles.Footer}/>            
 
