@@ -59,14 +59,16 @@
 .IntroText{
   line-height: normal;
   color: white;
-  font-size: 300%;
+  font-size: 400%;
   font-weight: bolder;
   text-align: center;
 }
 
 .Memoji{
   width: 40%;
-  display: block
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .Headline{
@@ -78,6 +80,7 @@
   font-style: italic;
   letter-spacing: 0.1em;
   text-align: justify;
+  padding-top: 2%;
 }
 
 .PortfolioTitle{
@@ -85,10 +88,13 @@
   color: white;
   font-size: 200%;
   font-weight: bold;
+  margin-top: 5%;
+  margin-bottom: 10px;
 }
 
 .Skills{
   margin-top: -5%;
+  margin-bottom: -1%;
   display: flex;
   width: 100%;
 }
@@ -109,11 +115,12 @@
 
 .SkillsIcon{
   display: flex;
-  margin-top: -10%;
+  margin-top: auto;
 }
 
 .IconCombo{
   width: 50%;
+  margin-top: -10%;
 }
 
 .IconPosition{
@@ -121,14 +128,15 @@
 }
 
 .IconSize{
-  font-size: 70px;
+  font-size: 50px;
   color: white;
 }
 
 .IconText{
   color: white;
-  font-size: 120%;
+  font-size: 110%;
   text-align: center;
+  margin-top: auto;
 }
 
 .ProjectBorder{
@@ -140,6 +148,8 @@
     -moz-border-radius: 16px;
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
+  margin-top: auto;
+  margin-bottom: 5%;
 }
 
 .ProjectLinkTitle{
@@ -151,6 +161,7 @@
   padding-right: 2%;
   padding-left: 2%;
   text-align: left;
+  text-decoration: underline;
 }
 
 .ProjectLinkParagraph{
@@ -161,6 +172,68 @@
   padding-right: 2%;
   padding-left: 2%;
   text-align: justify;
+}
+
+.Experience{
+  display: flex;
+}
+
+.ExperienceTimeline{
+  width: 10%;
+}
+
+.ExperienceTimelineFormat{
+  margin-left: 45%;
+  height: 33%;
+  width: 10%;
+  background-color: white;
+}
+
+
+.ExperienceDescriptions{
+  width: 90%;
+}
+
+.ExperienceJob{
+  margin-left: 2%;
+}
+
+.ExperienceCompanyName{
+  color: gold;
+  font-size: 180%;
+  font-weight: bold;
+  width: 150%;
+  text-align: left;
+  margin-bottom: auto;
+}
+
+.ExperienceJobDates{
+  margin-bottom: auto;
+  margin-top: auto;
+  color: rgba(255, 217, 0, 0.75);
+  font-size: 100%;
+  width: 100%;
+  text-align: left;
+  font-style: italic;
+}
+
+.ExperienceJobPost{
+  margin-bottom: auto;
+  margin-top: auto;
+  color: rgba(255, 217, 0, 0.75);
+  font-size: 120%;
+  width: 100%;
+  text-align: left;
+  font-style: italic;
+}
+
+.ExperienceJobDescription{
+  color: white;
+  font-size: 120%;
+  width: 100%;
+  text-align: justify;
+  margin: auto;
+  margin-bottom: 15%;
 }
 
 .Footer{
@@ -178,12 +251,12 @@
   
   .Headline{
     font-size: 100%;
-    margin-top: -3%;
+    margin-top: auto;
   }
   
   .PortfolioTitle{
     font-size: 166%;
-    margin-top: -2%;
+    margin-top: auto;
   }
 
   .Skills{
@@ -201,12 +274,40 @@
     font-size: 166%;
   }
 
+  .IconCombo{
+    margin-top: -18%;
+  }
+
   .IconSize{
     font-size: 35px;
   }
 
   .IconText{
     font-size: 90%;
+  }
+
+  .ProjectLinkTitle{
+    font-size: 166%;
+  }
+
+  .ProjectLinkParagraph{
+    font-size: 90%;
+  }
+
+  .ExperienceCompanyName{
+    font-size: 140%;
+  }
+  
+  .ExperienceJobDates{
+    font-size: 80%;
+  }
+  
+  .ExperienceJobPost{
+    font-size: 100%;
+  }
+  
+  .ExperienceJobDescription{
+    font-size: 100%;
   }
 
 }

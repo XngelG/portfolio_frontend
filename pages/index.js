@@ -48,15 +48,19 @@ export default function Home() {
             <div className={styles.Line}/>
 
             <div className={styles.IntroImage}>
+
+              <div className={styles.Memoji}>
+                <Image src="https://i.imgur.com/zx0ytkW.png" alt="Personal" layout='responsive' width={200} height={200}/>
+              </div>
+
               <div className={styles.Intro}>
                 <h1 className={styles.IntroText}>
                   HEY, I&apos;M ÁNGEL GALLARDO
                 </h1>
               </div>
               
-              <div className={styles.Memoji}>
-                <Image src="https://i.imgur.com/zx0ytkW.png" alt="Campaign Banner" layout='responsive' width={400} height={400}/>
-              </div>
+              
+
             </div>
 
             <p className={styles.Headline}>
@@ -148,6 +152,65 @@ export default function Home() {
               </Link>
             </div>
 
+            <h2 className={styles.PortfolioTitle}>
+              MY EXPERIENCE
+            </h2>
+
+            <div className={styles.Experience}>
+              <div className={styles.ExperienceTimeline}>
+                <div className={styles.ExperienceTimelineFormat}/>
+                <div className={styles.ExperienceTimelineFormat}/>
+                <div className={styles.ExperienceTimelineFormat}/>
+              </div>
+              <div  className={styles.ExperienceDescriptions}>
+    
+                <div className={styles.ExperienceJob}>
+                  <h3 className={styles.ExperienceCompanyName}>
+                    Keyence
+                  </h3>
+                  <p className={styles.ExperienceJobDates}>
+                    Jun 2019 - Present
+                  </p>
+                  <p className={styles.ExperienceJobPost}>
+                    Senior tech support
+                  </p>
+                  <p className={styles.ExperienceJobDescription}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed maximus urna. Sed pulvinar consectetur eros nec dictum. Ut volutpat arcu enim, at ornare justo vulputate et. Maecenas dignissim, nibh at mattis fermentum, leo nisi hendrerit dolor, in ultricies ipsum augue non neque. Cras feugiat tempus erat convallis viverra. Aliquam volutpat augue at nunc fringilla, iaculis pharetra mi pharetra. Integer dictum dui eu suscipit faucibus. Vivamus sollicitudin, nunc sit amet molestie feugiat, purus elit luctus neque, at faucibus risus lectus vitae sapien. Mauris ipsum odio, tristique ut imperdiet sodales, rhoncus quis nisi. Quisque massa ipsum, pulvinar nec luctus ac, sollicitudin sed augue. In fringilla bibendum ultricies. Vivamus finibus ex eget odio ornare pharetra. Nam ac turpis sit amet neque elementum condimentum nec sed nisl. Donec sollicitudin eros vel metus maximus porta.
+                  </p>
+                </div>
+
+                <div className={styles.ExperienceJob}>
+                  <h3 className={styles.ExperienceCompanyName}>
+                    Keyence
+                  </h3>
+                  <p className={styles.ExperienceJobDates}>
+                    Jun 2019 - Present
+                  </p>
+                  <p className={styles.ExperienceJobPost}>
+                    Senior tech support
+                  </p>
+                  <p className={styles.ExperienceJobDescription}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed maximus urna. Sed pulvinar consectetur eros nec dictum. Ut volutpat arcu enim, at ornare justo vulputate et. Maecenas dignissim, nibh at mattis fermentum, leo nisi hendrerit dolor, in ultricies ipsum augue non neque. Cras feugiat tempus erat convallis viverra. Aliquam volutpat augue at nunc fringilla, iaculis pharetra mi pharetra. Integer dictum dui eu suscipit faucibus. Vivamus sollicitudin, nunc sit amet molestie feugiat, purus elit luctus neque, at faucibus risus lectus vitae sapien. Mauris ipsum odio, tristique ut imperdiet sodales, rhoncus quis nisi. Quisque massa ipsum, pulvinar nec luctus ac, sollicitudin sed augue. In fringilla bibendum ultricies. Vivamus finibus ex eget odio ornare pharetra. Nam ac turpis sit amet neque elementum condimentum nec sed nisl. Donec sollicitudin eros vel metus maximus porta.
+                  </p>
+                </div>
+
+                <div className={styles.ExperienceJob}>
+                  <h3 className={styles.ExperienceCompanyName}>
+                    Keyence
+                  </h3>
+                  <p className={styles.ExperienceJobDates}>
+                    Jun 2019 - Present
+                  </p>
+                  <p className={styles.ExperienceJobPost}>
+                    Senior tech support
+                  </p>
+                  <p className={styles.ExperienceJobDescription}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed maximus urna. Sed pulvinar consectetur eros nec dictum. Ut volutpat arcu enim, at ornare justo vulputate et. Maecenas dignissim, nibh at mattis fermentum, leo nisi hendrerit dolor, in ultricies ipsum augue non neque. Cras feugiat tempus erat convallis viverra. Aliquam volutpat augue at nunc fringilla, iaculis pharetra mi pharetra. Integer dictum dui eu suscipit faucibus. Vivamus sollicitudin, nunc sit amet molestie feugiat, purus elit luctus neque, at faucibus risus lectus vitae sapien. Mauris ipsum odio, tristique ut imperdiet sodales, rhoncus quis nisi. Quisque massa ipsum, pulvinar nec luctus ac, sollicitudin sed augue. In fringilla bibendum ultricies. Vivamus finibus ex eget odio ornare pharetra. Nam ac turpis sit amet neque elementum condimentum nec sed nisl. Donec sollicitudin eros vel metus maximus porta.
+                  </p>
+                </div>
+
+              </div>
+            </div>
 
             
             <div className={styles.Footer}/>            
