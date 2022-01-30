@@ -41,7 +41,7 @@ export default function Home() {
                 <Link href={"/sentiment/"}>SENTIMENT</Link>
               </div>
               <div className={styles.NavContent}>
-                <Link href={"/"}>PORTFOLIO</Link>
+                <Link href={"/portfolio/"}>PORTFOLIO</Link>
                 </div>            
             </div>
 

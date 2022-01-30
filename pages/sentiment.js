@@ -112,7 +112,7 @@ return(
                 <Link href={"/sentiment/"}>SENTIMENT</Link>
               </div>
               <div className={styles.NavContent}>
-                <Link href={"/"}>PORTFOLIO</Link>
+                <Link href={"/portfolio/"}>PORTFOLIO</Link>
                 </div>            
             </div>
           <div className={styles.Line}/>
@@ -222,83 +222,6 @@ return(
 
   </div>
 )
-  // if(process.browser){
-  //   return(
-      
-
-  //     <main>
-  //       <div >
-  //         <div className={styles.InnerContent}>
-  //           <div className={styles.Form}>
-  //             <form onSubmit={getSentiment}>
-  //             <h1 className={styles.keywordText}>Analyze sentiment of any topic!</h1>
-  //             <input id="name" name="name" type="text" autoComplete="on" required className={styles.keywordBox} onChange={(e)=>{setKeyword(e.target.value);}} placeholder={keywordSearch}/>
-  //             <button type="submit" className={styles.keywordSubmit}>Search</button>
-  //             </form> 
-  //           </div>
-  //           <div className={styles.Form2}>
-  //             <form onSubmit={getSentiment}>
-  //               <button type="submit" value={trendData.trend_1} onClick={(e)=>{setKeyword(e.target.value);}} className={styles.buttonTrends}>{trendData.trend_1}</button>
-  //               <button type="submit" value={trendData.trend_2} onClick={(e)=>{setKeyword(e.target.value);}} className={styles.buttonTrends}>{trendData.trend_2}</button>
-  //               <button type="submit" value={trendData.trend_3} onClick={(e)=>{setKeyword(e.target.value);}} className={styles.buttonTrends}>{trendData.trend_3}</button>
-  //               <button type="submit" value={trendData.trend_4} onClick={(e)=>{setKeyword(e.target.value);}} className={styles.buttonTrends}>{trendData.trend_4}</button>
-  //               <button type="submit" value={trendData.trend_5} onClick={(e)=>{setKeyword(e.target.value);}} className={styles.buttonTrends}>{trendData.trend_5}</button>
-  //             </form>
-  //           </div>
-  //           {isLoading?
-  //             <div>
-  //               <div className={styles.loadingBar} >
-  //                 <Bars color="#212121" height={80} width={120} />
-  //               </div>
-  //               <p className={styles.loadingText}>PROCESSING INFO</p>
-  //             </div>:<div></div>
-  //           }
-  //           {isCompleted?
-  //           <div>
-  //             <div className={styles.wordcloudGrid}>
-  //               <div className={styles.leftGrid}>
-  //                 <div className={styles.reportText}> 
-  //                   <p>{data.keyword} returns a {pos_parse}% of positive opinions and {neg_parse}% of negative opinions </p>
-  //                 </div>
-  //                 <div className={styles.dataChart}>
-  //                   <Doughnut data={dataChart} />
-  //                 </div>
-  //               </div>
-        
-  //               <div className={styles.rightGrid}>
-  //                 <h1 className={styles.wordcloudText}>Recurring positive words</h1>
-  //                 <div className={styles.wordcloudBox}>
-  //                   <div className={styles.wordCloud}>
-  //                     <Resizable>
-  //                       <ReactWordcloud options={{rotations: 2,rotationAngles: [-90, 0],fontSizes: [15,60],colors:["#1B5E20","#2E7D32","#388E3C","#43A047"],}} 
-  //                       words={data.wordcloud_pos} 
-  //                       />
-  //                     </Resizable>
-  //                   </div>
-  //                 </div>
-  //                 <h1 className={styles.wordcloudText}>Recurring negative words</h1>
-  //                 <div className={styles.wordcloudBox}>
-  //                   <div className={styles.wordCloud}>
-  //                     <Resizable>
-  //                       <ReactWordcloud options={{rotations: 2,rotationAngles: [-90, 0],fontSizes: [15,60],colors:["#B71C1C","#C62828","#D32F2F","#E53935"],}}
-  //                       words={data.wordcloud_neg}
-  //                       />
-  //                     </Resizable>
-  //                   </div>
-  //                 </div>
-  //               </div>     
-  //             </div>     
-  //             </div>:<div></div>
-  //           }
-  //         </div>
-  //       </div>
-  //     </main>
-  //     //
-  //     )
-  // }
-  // else{
-  //   return <div></div>
-  // }
   
 }
 
