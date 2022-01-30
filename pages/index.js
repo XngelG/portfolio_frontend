@@ -144,12 +144,16 @@ export default function Home() {
             </h2>
 
             <div className={styles.ProjectBorder}>
-              <Link href={"/sentiment/"}>
-                <h3 className={styles.ProjectLinkTitle}>Sentiment analysis</h3>
-              </Link>
-              <Link href={"/sentiment/"} className={styles.ProjectLinks}>
-                <p className={styles.ProjectLinkParagraph}>Created a REST API that has two main functions, fetch top 5 trends in Twitter and using NLP libraries return the sentiment (positive, negative, neutral) that Twitter has related to the searched topic</p>
-              </Link>
+              <h3 className={styles.ProjectLinkTitle}>
+                <Link href={"/sentiment/"}>
+                  Sentiment analysis
+                </Link>
+              </h3>
+              <p className={styles.ProjectLinkParagraph}>
+                <Link href={"/sentiment/"}>
+                  Created a REST API that has two main functions, fetch top 5 trends in Twitter and using NLP libraries return the sentiment (positive, negative, neutral) that Twitter has related to the searched topic
+                </Link>
+              </p>
             </div>
 
             <h2 className={styles.PortfolioTitle}>
@@ -158,8 +162,6 @@ export default function Home() {
 
             <div className={styles.Experience}>
               <div className={styles.ExperienceTimeline}>
-                <div className={styles.ExperienceTimelineFormat}/>
-                <div className={styles.ExperienceTimelineFormat}/>
                 <div className={styles.ExperienceTimelineFormat}/>
               </div>
               <div  className={styles.ExperienceDescriptions}>
@@ -175,37 +177,31 @@ export default function Home() {
                     Senior tech support
                   </p>
                   <p className={styles.ExperienceJobDescription}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed maximus urna. Sed pulvinar consectetur eros nec dictum. Ut volutpat arcu enim, at ornare justo vulputate et. Maecenas dignissim, nibh at mattis fermentum, leo nisi hendrerit dolor, in ultricies ipsum augue non neque. Cras feugiat tempus erat convallis viverra. Aliquam volutpat augue at nunc fringilla, iaculis pharetra mi pharetra. Integer dictum dui eu suscipit faucibus. Vivamus sollicitudin, nunc sit amet molestie feugiat, purus elit luctus neque, at faucibus risus lectus vitae sapien. Mauris ipsum odio, tristique ut imperdiet sodales, rhoncus quis nisi. Quisque massa ipsum, pulvinar nec luctus ac, sollicitudin sed augue. In fringilla bibendum ultricies. Vivamus finibus ex eget odio ornare pharetra. Nam ac turpis sit amet neque elementum condimentum nec sed nisl. Donec sollicitudin eros vel metus maximus porta.
+                    <ul>
+                      <li><b>Direct closing sales contribution:</b> collaborate with sales members to oversee the closing of PLC projects that amount on sales over 1M USD</li>
+                      <li><b>SQL expert:</b> supervise all SQL-PLC related applications throughout the country (more than 5 key accounts with completed projects)</li>
+                      <li><b>Field support:</b> oversee the completion of projects via onsite technical support and specification</li>
+                      <li><b>Documentation development:</b> developed multimedia material for sales members to use with clients</li>
+                      <li><b>IoT promotion:</b> on charge of introducing to the market the suite of IoT products from Keyence Mexico</li>
+                    </ul>
                   </p>
                 </div>
 
                 <div className={styles.ExperienceJob}>
                   <h3 className={styles.ExperienceCompanyName}>
-                    Keyence
+                    Tec de Monterrey
                   </h3>
                   <p className={styles.ExperienceJobDates}>
-                    Jun 2019 - Present
+                    Jan 2018 – May 2019
                   </p>
                   <p className={styles.ExperienceJobPost}>
-                    Senior tech support
+                    Adjunct Professor
                   </p>
                   <p className={styles.ExperienceJobDescription}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed maximus urna. Sed pulvinar consectetur eros nec dictum. Ut volutpat arcu enim, at ornare justo vulputate et. Maecenas dignissim, nibh at mattis fermentum, leo nisi hendrerit dolor, in ultricies ipsum augue non neque. Cras feugiat tempus erat convallis viverra. Aliquam volutpat augue at nunc fringilla, iaculis pharetra mi pharetra. Integer dictum dui eu suscipit faucibus. Vivamus sollicitudin, nunc sit amet molestie feugiat, purus elit luctus neque, at faucibus risus lectus vitae sapien. Mauris ipsum odio, tristique ut imperdiet sodales, rhoncus quis nisi. Quisque massa ipsum, pulvinar nec luctus ac, sollicitudin sed augue. In fringilla bibendum ultricies. Vivamus finibus ex eget odio ornare pharetra. Nam ac turpis sit amet neque elementum condimentum nec sed nisl. Donec sollicitudin eros vel metus maximus porta.
-                  </p>
-                </div>
-
-                <div className={styles.ExperienceJob}>
-                  <h3 className={styles.ExperienceCompanyName}>
-                    Keyence
-                  </h3>
-                  <p className={styles.ExperienceJobDates}>
-                    Jun 2019 - Present
-                  </p>
-                  <p className={styles.ExperienceJobPost}>
-                    Senior tech support
-                  </p>
-                  <p className={styles.ExperienceJobDescription}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed maximus urna. Sed pulvinar consectetur eros nec dictum. Ut volutpat arcu enim, at ornare justo vulputate et. Maecenas dignissim, nibh at mattis fermentum, leo nisi hendrerit dolor, in ultricies ipsum augue non neque. Cras feugiat tempus erat convallis viverra. Aliquam volutpat augue at nunc fringilla, iaculis pharetra mi pharetra. Integer dictum dui eu suscipit faucibus. Vivamus sollicitudin, nunc sit amet molestie feugiat, purus elit luctus neque, at faucibus risus lectus vitae sapien. Mauris ipsum odio, tristique ut imperdiet sodales, rhoncus quis nisi. Quisque massa ipsum, pulvinar nec luctus ac, sollicitudin sed augue. In fringilla bibendum ultricies. Vivamus finibus ex eget odio ornare pharetra. Nam ac turpis sit amet neque elementum condimentum nec sed nisl. Donec sollicitudin eros vel metus maximus porta.
+                    <ul>
+                      <li><b>Programming:</b> taught Python programming class for mechatronics’ undergraduates, innovating by introducing them to basic artificial evolution concepts</li>
+                      <li><b>Industrial Networks:</b> taught ladder programming class with Siemens PLCs for mechanics’ undergraduates, innovating the standard curriculum which only included basic PID control</li>
+                    </ul>
                   </p>
                 </div>
 
