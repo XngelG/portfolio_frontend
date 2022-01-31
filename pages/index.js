@@ -46,7 +46,7 @@ export default function Home() {
             <div className={styles.IntroImage}>
 
               <div className={styles.Memoji}>
-                <Image src="https://i.imgur.com/zx0ytkW.png" alt="Personal" layout='responsive' width={200} height={200}/>
+                <Image src="https://res.cloudinary.com/dfcshdnfp/image/upload/v1643647335/zx0ytkW_qvvvnq.png" alt="Personal" layout='responsive' width={200} height={200} priority/>
               </div>
 
               <div className={styles.Intro}>
