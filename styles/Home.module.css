@@ -120,10 +120,11 @@
 .SkillsIcon{
   display: flex;
   margin-top: auto;
+  justify-content: center;
 }
 
 .IconCombo{
-  width: 50%;
+  width: 25%;
   margin-top: -10%;
 }
 
@@ -180,6 +181,7 @@
 
 .Experience{
   display: flex;
+  margin-bottom: 5%;
 }
 
 .ExperienceTimeline{
@@ -247,6 +249,18 @@
 @media (max-width: 1024px) {
   .Content{
     width: 75%;
+  }
+  .Skills{
+    display: inline;
+  }
+  .IconCombo{
+    width: 50%;
+  }
+  .SkillsSet{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -8%;
   }
 }
 

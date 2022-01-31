@@ -109,9 +109,6 @@ return(
                 <Link href={"/"}>HOME</Link>
               </div>
               <div className={styles.NavContent}>
-                <Link href={"/sentiment/"}>SENTIMENT</Link>
-              </div>
-              <div className={styles.NavContent}>
                 <Link href={"/portfolio/"}>PORTFOLIO</Link>
                 </div>            
             </div>
@@ -175,14 +172,12 @@ return(
                     <div className={styles.WordCloud}>
                       {process.browser?
                         <div>
-                          <Resizable>
                             <ReactWordcloud options={{rotations: 2,rotationAngles: [-90, 0],
                                             fontSizes: [15,60],
                                             colors:["#1B5E20","#2E7D32","#388E3C","#43A047"],
                                             fontFamily:'Bebas Neue',}} 
                                             words={data.wordcloud_pos} 
                                             />
-                          </Resizable>
                         </div>:<div></div>
                       }
                     </div>
@@ -193,14 +188,12 @@ return(
                     <div className={styles.wordCloud}>
                       {process.browser?
                         <div>
-                          <Resizable>
                             <ReactWordcloud options={{rotations: 2,rotationAngles: [-90, 0],
                                             fontSizes: [15,60],
                                             colors:["#B71C1C","#C62828","#D32F2F","#E53935"],
                                             fontFamily:'Bebas Neue',}}
                                             words={data.wordcloud_neg}
                                             />
-                          </Resizable>
                         </div>:<div></div>
                       }
                     </div>

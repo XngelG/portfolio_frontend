@@ -7,10 +7,9 @@ import {SiDjango} from 'react-icons/si'
 import {SiGit} from 'react-icons/si'
 import {SiPython} from 'react-icons/si'
 import {SiPandas} from 'react-icons/si'
-import {SiScipy} from 'react-icons/si'
 import {SiNumpy} from 'react-icons/si'
 import Image from 'next/image'
-// import {SiPython} from 'react-icons/si'
+import {SiHeroku} from 'react-icons/si'
 // import {SiPython} from 'react-icons/si'
 // import {SiPython} from 'react-icons/si'
 
@@ -36,9 +35,6 @@ export default function Home() {
             <div className={styles.NavBar}>
               <div className={styles.NavContent}>
                 <Link href={"/"}>HOME</Link>
-              </div>
-              <div className={styles.NavContent}>
-                <Link href={"/sentiment/"}>SENTIMENT</Link>
               </div>
               <div className={styles.NavContent}>
                 <Link href={"/portfolio/"}>PORTFOLIO</Link>
@@ -129,9 +125,21 @@ export default function Home() {
                   </div>
                   <div className={styles.IconCombo}>
                     <div className={styles.IconPosition}>
-                      <SiScipy className={styles.IconSize}/>
+                      <SiPandas className={styles.IconSize}/>
                     </div>
-                    <p className={styles.IconText}>SciKit Learn</p>
+                    <p className={styles.IconText}>Pandas</p>
+                  </div>
+                  <div className={styles.IconCombo}>
+                    <div className={styles.IconPosition}>
+                      <SiHeroku className={styles.IconSize}/>
+                    </div>
+                    <p className={styles.IconText}>Heroku</p>
+                  </div>
+                  <div className={styles.IconCombo}>
+                    <div className={styles.IconPosition}>
+                      <SiNumpy className={styles.IconSize}/>
+                    </div>
+                    <p className={styles.IconText}>Numpy</p>
                   </div>
                 </div>
 
@@ -151,7 +159,7 @@ export default function Home() {
               </h3>
               <p className={styles.ProjectLinkParagraph}>
                 <Link href={"/sentiment/"}>
-                  Created a REST API that has two main functions, fetch top 5 trends in Twitter and using NLP libraries return the sentiment (positive, negative, neutral) that Twitter has related to the searched topic
+                Created a REST API with Django REST that has two main functions: fetch top 5 trends in Twitter; and using NLP libraries return the sentiment (positive, negative, neutral) that Twitter has related to the searched topic. Used Next.JS for the front end.
                 </Link>
               </p>
             </div>
@@ -201,6 +209,53 @@ export default function Home() {
                     <ul>
                       <li><b>Programming:</b> taught Python programming class for mechatronics’ undergraduates, innovating by introducing them to basic artificial evolution concepts</li>
                       <li><b>Industrial Networks:</b> taught ladder programming class with Siemens PLCs for mechanics’ undergraduates, innovating the standard curriculum which only included basic PID control</li>
+                    </ul>
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <h2 className={styles.PortfolioTitle}>
+              MY EDUCATION
+            </h2>
+
+            <div className={styles.Experience}>
+              <div className={styles.ExperienceTimeline}>
+                <div className={styles.ExperienceTimelineFormat}/>
+              </div>
+              <div  className={styles.ExperienceDescriptions}>
+    
+                <div className={styles.ExperienceJob}>
+                  <h3 className={styles.ExperienceCompanyName}>
+                    Ecole polytechnique fédérale de Lausanne 
+                  </h3>
+                  <p className={styles.ExperienceJobDates}>
+                    Sept 2015 - Mar 2017
+                  </p>
+                  <p className={styles.ExperienceJobPost}>
+                    Master of Science in microengineering
+                  </p>
+                  <p className={styles.ExperienceJobDescription}>
+                    <ul>
+                      <li><b>Relevant coursework:</b> Machine Learning, Artificial Evolution, Distributed Intelligent Systems</li>
+                    </ul>
+                  </p>
+                </div>
+
+                <div className={styles.ExperienceJob}>
+                  <h3 className={styles.ExperienceCompanyName}>
+                    Tec de Monterrey
+                  </h3>
+                  <p className={styles.ExperienceJobDates}>
+                    Aug 2010 – Dec 2014
+                  </p>
+                  <p className={styles.ExperienceJobPost}>
+                    Bachelor of mechatronics engineering; Summa Cum Laude
+                  </p>
+                  <p className={styles.ExperienceJobDescription}>
+                    <ul>
+                      <li><b>Relevant coursework:</b> Programming, Industrial Networks, Applied Control Theory</li>
                     </ul>
                   </p>
                 </div>

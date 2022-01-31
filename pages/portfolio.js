@@ -2,18 +2,8 @@ import styles from '../styles/Portfolio.module.css'
 import Link from 'next/link'
 import Head from 'next/head'
 import Image from "next/image";
-import useEmblaCarousel from 'embla-carousel-react'
-import { useEffect } from 'react'
 
 export default function Home() {
-
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false })
-
-  useEffect(() => {
-    if (emblaApi) {
-      // Embla API is ready
-    }
-  }, [emblaApi])
 
 return(
   <div>
@@ -42,45 +32,31 @@ return(
                 <Link href={"/"}>HOME</Link>
               </div>
               <div className={styles.NavContent}>
-                <Link href={"/sentiment/"}>SENTIMENT</Link>
-              </div>
-              <div className={styles.NavContent}>
                 <Link href={"/portfolio/"}>PORTFOLIO</Link>
                 </div>            
             </div>
           <div className={styles.Line}/>
           
           <div className={styles.PhotoPortfolio}>
-
-            <div className={styles.embla} ref={emblaRef}>
-              <div className={styles.embla__container}>
-                <div className={styles.embla__slide}>
-                  <Image src="https://i.imgur.com/m4eq3EW.jpg" alt="Personal" layout='responsive' width={4} height={5} priority/>
-                </div>
-                <div className={styles.embla__slide}>
-                  <Image src="https://i.imgur.com/kPdxy32.jpg" alt="Personal" layout='responsive' width={4} height={5}/>
-                </div>
-                <div className={styles.embla__slide}>
-                  <Image src="https://i.imgur.com/m4eq3EW.jpg" alt="Personal" layout='responsive' width={4} height={5}/>
-                </div>
-                <div className={styles.embla__slide}>
-                  <Image src="https://i.imgur.com/tD1ryYC.jpg" alt="Personal" layout='responsive' width={4} height={5}/>
-                </div>
-                <div className={styles.embla__slide}>
-                  <Image src="https://i.imgur.com/JyFd6XF.jpg" alt="Personal" layout='responsive' width={4} height={5}/>
-                </div>
-                <div className={styles.embla__slide}>
-                  <Image src="https://i.imgur.com/5jmmYnT.jpg" alt="Personal" layout='responsive' width={4} height={5}/>
-                </div>
-                <div className={styles.embla__slide}>
-                  
-                </div>
-                <div className={styles.embla__slide}>
-                  
-                </div>
-              </div>
+            <div className={styles.PhotoIndividual}>
+              <Image src="https://i.imgur.com/kPdxy32.jpg" alt="Personal" layout='responsive' width={4} height={5} priority quality={50}/>
             </div>
-
+            <div className={styles.PhotoIndividual}>
+              <Image src="https://i.imgur.com/m4eq3EW.jpg" alt="Personal" layout='responsive' width={4} height={5} quality={50}/>
+            </div>
+            <div className={styles.PhotoIndividual}>
+              <Image src="https://i.imgur.com/iwRmm6i.jpg" alt="Personal" layout='responsive' width={4} height={5} quality={50}/>
+            </div>
+            <div className={styles.PhotoIndividual}>
+              <Image src="https://i.imgur.com/tD1ryYC.jpg" alt="Personal" layout='responsive' width={4} height={5} quality={50}/>  
+            </div>
+            <div className={styles.PhotoIndividual}>
+              <Image src="https://i.imgur.com/JyFd6XF.jpg" alt="Personal" layout='responsive' width={4} height={5} quality={50}/>
+            </div>
+            <div className={styles.PhotoIndividual}>
+              <Image src="https://i.imgur.com/5jmmYnT.jpg" alt="Personal" layout='responsive' width={4} height={5} quality={50}/>
+            </div>
+            
           </div>
 
           <div className={styles.Footer}/> 
