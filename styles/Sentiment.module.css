@@ -107,21 +107,23 @@
 }
 
 .TrendButtonAlign{
-  display: inline;
-  width: 100%;
-  text-align: center;
+  display: inline-block;
+  width: 50%;
   align-items: center;
+  padding-left: .5%;
+  padding-right: .5%;
+  margin-top: .5%;
+  vertical-align: middle;
 }
 
 .ButtonTrends{
   word-wrap: break-word;
-  width: 50%;
+  width: fit-content;
   height: fit-content;
   color: black;
   font-size: 120%;
   font-weight: bolder;
   text-align: center;
-  margin-top: .5%;
   background-color: white;
   border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -222,7 +224,7 @@
   }
 
   .ButtonTrends{
-    width: 50%;
+    width: 100%;
     font-size: 125%;
   }
 
