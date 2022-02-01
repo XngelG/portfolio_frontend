@@ -101,7 +101,7 @@ return(
     </Head>
 
     <main className={styles.Main}>
-    <Image src="https://res.cloudinary.com/dfcshdnfp/image/upload/v1643647216/7d0JQqq_nbufbe.png" alt="Background" layout='fill' objectFit='cover' objectPosition='center' priority/>
+    <Image src="https://res.cloudinary.com/dfcshdnfp/image/upload/v1643647216/7d0JQqq_nbufbe.png" alt="Background" layout='fill' objectFit='cover' objectPosition='center' placeholder='blur' priority/>
       <div className={styles.Wrapper}>
 
         <div className={styles.Content}>
