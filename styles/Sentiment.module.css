@@ -114,10 +114,11 @@
 }
 
 .ButtonTrends{
-  width: 33%;
-  height: 36px;
+  word-wrap: break-word;
+  width: 50%;
+  height: fit-content;
   color: black;
-  font-size: 150%;
+  font-size: 120%;
   font-weight: bolder;
   text-align: center;
   margin-top: .5%;
