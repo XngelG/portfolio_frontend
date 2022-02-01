@@ -9,6 +9,7 @@ import 'chart.js/auto';
 import { Resizable } from "re-resizable";
 import Link from 'next/link'
 import Head from 'next/head'
+import Image from 'next/image'
 
 export default function Home({trendData,trendError}) {
   const [isCompleted,setIsCompleted,] = useState(false)
