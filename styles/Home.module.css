@@ -161,6 +161,7 @@
 .ProjectContent{
   width: 75%;
 }
+
 .ProjectTryMe{
   width: 25%;
   background-color: white;
@@ -334,6 +335,10 @@
 
   .ProjectLinkParagraph{
     font-size: 90%;
+  }
+
+  .ProjectTryMe{
+    font-size: 166%;
   }
 
   .ExperienceCompanyName{
