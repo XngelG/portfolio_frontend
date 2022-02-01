@@ -30,7 +30,7 @@ export default function Home() {
         <meta name="theme-color" content="#ffffff"></meta>
       </Head>
       <main className={styles.Main}>
-      <Image src="https://res.cloudinary.com/dfcshdnfp/image/upload/v1643647216/7d0JQqq_nbufbe.png" alt="Background" layout='fill' objectFit='cover' objectPosition='center' placeholder='blur' priority/>
+      <Image src="https://res.cloudinary.com/dfcshdnfp/image/upload/v1643647216/7d0JQqq_nbufbe.png" alt="Background" layout='fill' objectFit='cover' objectPosition='center' priority/>
         <div className={styles.Wrapper}>
           <div className={styles.Content}>
             <div className={styles.NavBar}>
@@ -153,16 +153,21 @@ export default function Home() {
             </h2>
 
             <div className={styles.ProjectBorder}>
-              <h3 className={styles.ProjectLinkTitle}>
-                <Link href={"/sentiment/"}>
-                  Sentiment analysis
-                </Link>
-              </h3>
-              <p className={styles.ProjectLinkParagraph}>
-                <Link href={"/sentiment/"}>
-                Created a REST API with Django REST that has two main functions: fetch top 5 trends in Twitter; and using NLP libraries return the sentiment (positive, negative, neutral) that Twitter has related to the searched topic. Used Next.JS for the front end.
-                </Link>
-              </p>
+              <div className={styles.ProjectContent}>
+                <h3 className={styles.ProjectLinkTitle}>
+                  <Link href={"/sentiment/"}>
+                    Sentiment analysis
+                  </Link>
+                </h3>
+                <p className={styles.ProjectLinkParagraph}>
+                  <Link href={"/sentiment/"}>
+                  Created a REST API with Django REST that has two main functions: fetch top 5 trends in Twitter; and using NLP libraries return the sentiment (positive, negative, neutral) that Twitter has related to the searched topic. Used Next.JS for the front end.
+                  </Link>
+                </p>
+              </div>
+              <Link href={"/sentiment/"}>
+              <button className={styles.ProjectTryMe}>Try me</button>
+              </Link>
             </div>
 
             <h2 className={styles.PortfolioTitle}>
