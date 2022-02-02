@@ -294,7 +294,7 @@
     display: inline;
   }
   .IconCombo{
-    width: 50%;
+    width: 30%;
   }
   .SkillsSet{
     width: 50%;
@@ -339,7 +339,7 @@
   }
 
   .IconCombo{
-    margin-top: -18%;
+    padding-top: 1%;
   }
 
   .IconSize{
@@ -361,8 +361,12 @@
   .ProjectTryMe{
   }
 
+  .ProjectButton{
+  }
+
   .ProjectButtonFont{
-    padding-top: 40px;
+    position: relative;
+    top: 15%;
     font-size: 166%;
   }
 
