@@ -165,11 +165,13 @@ export default function Home() {
                   </Link>
                 </p>
               </div>
-              <p className={styles.ProjectTryMe}>
-                <Link href={"/sentiment/"}>
-                  Try me
-                </Link>
-              </p>
+              <div className={styles.ProjectTryMe}>
+                <div className={styles.ProjectButton}>
+                  <Link href={"/sentiment/"}>
+                    <p className={styles.ProjectButtonFont}>Try me</p>
+                  </Link>
+                </div>
+              </div>
             </div>
 
             <h2 className={styles.PortfolioTitle}>
