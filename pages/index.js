@@ -167,9 +167,11 @@ export default function Home() {
               </div>
               <div className={styles.ProjectTryMe}>
                 <div className={styles.ProjectButton}>
-                  <Link href={"/sentiment/"}>
-                    <p className={styles.ProjectButtonFont}>Try me</p>
-                  </Link>
+                  <p className={styles.ProjectButtonFont}>
+                    <Link href={"/sentiment/"}>
+                      Try me
+                    </Link>
+                  </p>
                 </div>
               </div>
             </div>
