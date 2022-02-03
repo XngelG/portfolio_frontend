@@ -23,7 +23,7 @@ return(
     </Head>
 
     <main className={styles.Main}>
-      <Image src="https://res.cloudinary.com/dfcshdnfp/image/upload/v1643647216/7d0JQqq_nbufbe.png" alt="Background" layout='fill' objectFit='cover' objectPosition='center' priority/>
+      <Image src="/7d0JQqq_nbufbe.png" alt="Background" layout='fill' objectFit='cover' objectPosition='center' priority/>
       <div className={styles.Wrapper}>
 
         <div className={styles.Content}>
@@ -40,22 +40,22 @@ return(
           
           <div className={styles.PhotoPortfolio}>
             <div className={styles.PhotoIndividual}>
-              <Image src="https://res.cloudinary.com/dfcshdnfp/image/upload/v1643647589/kPdxy32_jkn8dr.jpg" alt="Personal" layout='responsive' width={4} height={5} priority quality={50}/>
+              <Image src="/kPdxy32.jpg" alt="Personal" layout='responsive' width={4} height={5} priority quality={50}/>
             </div>
             <div className={styles.PhotoIndividual}>
-              <Image src="https://res.cloudinary.com/dfcshdnfp/image/upload/v1643647589/m4eq3EW_cazesj.jpg" alt="Personal" layout='responsive' width={4} height={5} quality={50}/>
+              <Image src="/m4eq3EW.jpg" alt="Personal" layout='responsive' width={4} height={5} quality={50}/>
             </div>
             <div className={styles.PhotoIndividual}>
-              <Image src="https://res.cloudinary.com/dfcshdnfp/image/upload/v1643647590/iwRmm6i_hmtjdc.jpg" alt="Personal" layout='responsive' width={4} height={5} quality={50}/>
+              <Image src="/iwRmm6i.jpg" alt="Personal" layout='responsive' width={4} height={5} quality={50}/>
             </div>
             <div className={styles.PhotoIndividual}>
-              <Image src="https://res.cloudinary.com/dfcshdnfp/image/upload/v1643647590/tD1ryYC_fmqstn.jpg" alt="Personal" layout='responsive' width={4} height={5} quality={50}/>  
+              <Image src="/tD1ryYC.jpg" alt="Personal" layout='responsive' width={4} height={5} quality={50}/>  
             </div>
             <div className={styles.PhotoIndividual}>
-              <Image src="https://res.cloudinary.com/dfcshdnfp/image/upload/v1643647589/JyFd6XF_o6ynax.jpg" alt="Personal" layout='responsive' width={4} height={5} quality={50}/>
+              <Image src="/JyFd6XF.jpg" alt="Personal" layout='responsive' width={4} height={5} quality={50}/>
             </div>
             <div className={styles.PhotoIndividual}>
-              <Image src="https://res.cloudinary.com/dfcshdnfp/image/upload/v1643647593/5jmmYnT_v860pz.jpg" alt="Personal" layout='responsive' width={4} height={5} quality={50}/>
+              <Image src="/5jmmYnT.jpg" alt="Personal" layout='responsive' width={4} height={5} quality={50}/>
             </div>
             
           </div>

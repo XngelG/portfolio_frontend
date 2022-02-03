@@ -30,7 +30,7 @@ export default function Home() {
         <meta name="theme-color" content="#ffffff"></meta>
       </Head>
       <main className={styles.Main}>
-      <Image src="https://res.cloudinary.com/dfcshdnfp/image/upload/v1643647216/7d0JQqq_nbufbe.png" alt="Background" layout='fill' objectFit='cover' objectPosition='center' priority/>
+      <Image src="/7d0JQqq_nbufbe.png" alt="Background" layout='fill' objectFit='cover' objectPosition='center' priority/>
         <div className={styles.Wrapper}>
           <div className={styles.Content}>
             <div className={styles.NavBar}>
@@ -47,7 +47,7 @@ export default function Home() {
             <div className={styles.IntroImage}>
 
               <div className={styles.Memoji}>
-                <Image src="https://res.cloudinary.com/dfcshdnfp/image/upload/v1643647335/zx0ytkW_qvvvnq.png" alt="Personal" layout='responsive' width={200} height={200} priority/>
+                <Image src="/zx0ytkW.png" alt="Personal" layout='responsive' width={200} height={200} priority/>
               </div>
 
               <div className={styles.Intro}>
